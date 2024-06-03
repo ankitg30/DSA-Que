@@ -1,0 +1,41 @@
+import java.util.Arrays;
+
+public class pirac {
+	static int x = 10;
+	public static void main(String[] args) {
+		
+	System.out.println(x);	
+	int x=9;
+	System.out.println(x);
+	neww();
+
+int a = 200 ,b = 500;
+		swap(a,b);
+
+System.out.println("Value of First swapped " + a);
+		System.out.println("Value of Second swapped " + b);
+		
+		int num[] = {1,2,3,4,5};
+		
+		System.out.println(Arrays.toString(num));
+		
+		changearray(num);
+		
+		System.out.println(Arrays.toString(num));
+}
+	static void neww() {
+		System.out.println(x);
+	}
+public static void swap (int a, int b) {
+		
+		int temp = a;
+		a = b;
+		b = temp;
+		
+//		System.out.println("Value of First swapped " + a);
+//		System.out.println("Value of Second swapped " + b);
+	}
+	public static void changearray (int[] array) {
+		array[0] = 99;
+	}
+}
