@@ -1,0 +1,22 @@
+class Calculatoor{
+    public int addition(int n1, int n2){
+        return n1+n2;
+    }
+    public int addition(int n1, int n2, int n3){
+        return n1+n2+n3;
+    }
+    public double addition(double d1, int d2){
+        return d1+d2;
+    }
+}
+
+public class methodoverload {
+    public static void main(String[] args) {
+        Calculatoor calc = new Calculatoor();
+        
+        System.out.println(calc.addition(4,55,6));
+        System.out.println(calc.addition(10111919,1998774848));
+
+    }
+    
+}
