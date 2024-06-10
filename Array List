@@ -1,0 +1,22 @@
+package JavaDSA;
+import java.util.ArrayList;
+
+public class arraylist {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		
+		list.add(0);
+		list.add(8);
+		list.add(17);
+		list.add(52);
+		list.add(9);
+		list.add(15);
+		
+		System.out.println(list);
+		
+		System.out.println(list.get(5));
+	}
+
+}
