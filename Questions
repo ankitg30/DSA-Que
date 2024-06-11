@@ -1,0 +1,118 @@
+package JavaDSA;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class questions {
+
+	public static void main(String[] args) {
+//		Scanner in = new Scanner(System.in);
+//		int inpu = in.nextInt();
+
+		
+		
+//		--------------------------------------- REVERSE AN ARRRAYYYYY-------------------------------	
+//		int[] arr = {1,2,3,4,5,6,7};
+//		int start = 0;
+//		int end = arr.length-1;
+//		while(start<end) {
+//			reverse(arr, start, end);
+//			start++;
+//			end--;
+//		}
+//		System.out.println(Arrays.toString(arr));
+//		--------------------------------------- LARGEST ELEMENT IN ARRAY --------------------------------------
+//		int[] arr = {1,2,607,8,90,100};
+//		System.out.println(findmax(arr));		
+//		-------------------------------------swapping whole array -------------------------------------
+		
+//		int [] arr = {1,2,3,4,5,6,7};
+//		int a = 0;
+//		int b= arr.length-1;
+//		for(int i=0; i<arr.length/2; i++) {
+//			swap(arr, a,b);
+//			a=a+1;
+//			b=b-1;
+//		}
+//		System.out.println(Arrays.toString(arr));
+//				
+//	=============================           SWAPPINGGG 2 values of ARRRAAYYYYYYYYYYYYYYYYYYYYYYY============================
+//		int[] arr = {1,2,3,4,5};
+//		swap (arr, 0,4);
+//		System.out.println(Arrays.toString(arr));
+//		isArmstrong(inpu);     ----------- To check three digit armstrong ----------------------------
+//		isPrime(inpu);          ---------- PROGRAM TO CHECK NUMBER IS PRIME OR NOT -----------------
+	}
+	
+//	------ --------------- FUNCTION FOR REVERSING ARRAY -------------------------------------
+	static void reverse(int[] arr,int first, int last) {
+		int temp = arr[first];
+		arr[first] = arr[last];
+		arr[last] = temp;
+	}
+	
+//	-----------------------------------FUNCTION FOR Largest Element in an array -----------------------------------------------------
+	static int findmax (int[] array) {
+		
+		int max = array[0];
+		for(int i=0; i<array.length; i++) {
+			if(array[i]>max) {
+				max = array[i];
+			}
+		}
+		return max;
+	}
+	
+//	---------------------------------- function sto swap whole array ----------------------------------------
+	
+	static void swap (int[] arr, int first, int last) {
+		int temp = arr[first];
+		arr[first] = arr[last];
+		arr[last] = temp;
+	}
+//	---------------------------------- FUNCTION TO SWAP 2 values of ARRAYSSSS-------------------------------------
+	
+//		static void swap (int[] array, int a, int b) {
+//			int temp = array[a];
+//			array[a] = array[b];
+//			array[b] = temp;
+//		}
+
+//-------------------------------   Function to check is this ARMSTRONG number ----------------------------	
+//	static void isArmstrong(int n) {
+//		int original =n;
+//		int sum = 0;
+//		while(n>0) {
+//			int num = n%10;
+//			int cube = num*num*num;
+//			sum = sum+cube;
+//			n=n/10;
+//		}
+//		if(sum== original) {
+//			System.out.println("Armstrong number " + sum);
+//		}
+//		else {
+//			System.out.println("fasle");
+//		}
+//	}
+	
+	
+//	----------------------------------- FUNCTION FOR CHECKING PRIME NUMBER --------------------------------------
+//	static void isPrime(int inpu) {
+//		int count = 0;
+//		for(int i=2; i<=inpu; i++) {
+//			if(inpu%i == 0) {
+//				count ++;
+//			}
+//		}
+//		if(count == 1) {
+//			System.out.println("prime Number");
+//		}
+//		else {
+//			System.out.println("Not a prime number");
+//		}
+//		
+		
+	
+}
+
