@@ -1,0 +1,50 @@
+package JavaDSA;
+
+import java.util.Arrays;
+
+public class linearsearchques {
+	public static void main (String[] args) {
+		
+//		--------------------- Program to find the minimum number -----------------------------------------------
+		int[] arr = {1,78,-1,98,-4,76,90};
+		int ans = minimum(arr);
+		System.out.println(ans);
+		
+//		----------------- Program to find character into array ----------------------------------------------------
+
+//		String str = "Ankit Yadav";
+//		char target = 'Y';
+//		
+//		int ans = search(str, target);
+//		System.out.println(ans);
+//		System.out.println(Arrays.toString(str.toCharArray()));
+	}
+	
+//	============================= Function to find minimum number in arrray ====================
+	static int minimum(int[] array) {
+		
+		int min= array[0];
+		for(int i=0; i<array.length; i++) {
+			if(array[i]<min) {
+				min = array[i];
+			}
+		}
+		return min;
+	}
+	
+//	==============================     Function to find character into array    ================
+//	static int search(String str, char target) {
+//		
+//		if(str.length() == 0) {
+//			return -1;
+//		}
+//		char [] arr = str.toCharArray();  --- converted to array
+//		for(int i=0; i<str.length(); i++) {
+//			
+//			if(target == str.charAt(i));{
+//				return -1;
+//			}
+//		}
+//		return -1;
+//	}
+}
