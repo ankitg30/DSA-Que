@@ -1,0 +1,59 @@
+package JavaDSA;
+import java.util.*;
+
+public class two_d_arrayques {
+
+	public static void main(String[] args) {
+		
+		int[][] arr = {
+							{1,4,3},
+							{4,55,6,7},
+							{7,8,9}
+		};
+		
+//		===============        Find the indexes of target number or search a number =====================
+//		int target = 7;
+//		int[] ans =search(arr,target);
+//		System.out.println(Arrays.toString(arr));
+		
+//		=========        Find the maximum in 2D array ===========
+		int ans = search(arr);
+		System.out.println(ans);
+	}
+	
+//	---------------------- function of searching in 2d array ------------------------------------
+//	static int[] search(int[][] array, int target) {
+//		
+//		if(array.length == 0) {
+//			return new int[] {-1};
+//		}
+//		
+//		for(int i=0; i<array.length; i++) {
+//			
+//			for(int j=0; j<array[i].length; j++) {
+//				if(array[i][j] == target) {
+//					System.out.print("Array  indexes is : ");
+//					return new int[] {i, j};    // ----- to return an array we have to do like thissssssssssss 
+//				}
+//			}
+//			
+//		}
+//		return new int[] {0};
+//	}
+	
+//	------------------ Function to find maximum number in 2d array -------------------------
+	static int search(int[][] arr) {
+		
+		int max = arr[0][0];
+		for(int row=0; row<arr.length; row++) {
+			for(int col = 0; col<arr[row].length; col++) {
+				if(arr[row][col] > max) {
+					max = arr[row][col];
+				}
+			}
+	
+		}
+		System.out.print("Maximum value is : ");
+		return max;
+	}
+}
