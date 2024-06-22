@@ -1,22 +1,19 @@
-public class BinarySearch2D {
-
-    // Method to perform binary search on a 2D array
-    public static boolean binarySearch2D(int[][] matrix, int target) {
+public class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return false;
         }
-
+        
         int rows = matrix.length;
         int cols = matrix[0].length;
-
-        // Treat the 2D array as a 1D array
+        
         int left = 0;
         int right = rows * cols - 1;
-
+        
         while (left <= right) {
             int mid = left + (right - left) / 2;
             int midValue = matrix[mid / cols][mid % cols];
-
+            
             if (midValue == target) {
                 return true;
             } else if (midValue < target) {
@@ -25,7 +22,7 @@ public class BinarySearch2D {
                 right = mid - 1;
             }
         }
-
-        return false; // Target not found
+        
+        return false;
     }
-
+}
