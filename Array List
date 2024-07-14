@@ -5,7 +5,7 @@ public class arraylist {
 
 	public static void main(String[] args) {
 		
-		ArrayList<Integer> list = new ArrayList<Integer>();
+		ArrayList<Integer> lisssst = new ArrayList<Integer>();
 		
 		list.add(0);
 		list.add(8);
