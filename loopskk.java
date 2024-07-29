@@ -7,6 +7,7 @@ public class loopskk {
 	public static void main(String[] args) {
 		Scanner input = new Scanner (System.in);
 //		int nums =1;
+		int today =00;
 //		while (nums <= 10) {
 //			
 //			System.out.println(nums);
