@@ -1,0 +1,55 @@
+package JavaDSA;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class pirac {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	
+		int[] arr = {5,7,7,7,8,8,10};
+		int target = 7;
+		
+		int[] ans = start(arr, target);
+		System.out.println(Arrays.toString(ans));
+		
+	}	
+	
+	public static int[] start(int[] array, int target) {
+		int start =0;
+		int end=array.length-1;
+		int[] len = {-1,-1};
+		
+		if(array.length==0) {
+			return len;
+		}
+		if(array.length==1) {
+			if(target==array[0]) {
+				return new int[] {0,0};
+			}
+			else {
+				return len;
+			}
+		}
+		
+		while(start<=end) {
+			if(target!= array[start]) {
+				start++;
+			}
+			if(target!=array[end]) {
+				end--;
+			}
+			if(target==array[start] && target== array[end]) {
+				len[0]=start;
+				len[1]=end;
+				break;
+			}
+		}
+		return len;
+	}
+}
+
+
+
+
