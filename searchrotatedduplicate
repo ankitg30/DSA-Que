@@ -1,0 +1,54 @@
+package JavaDSA;
+
+public class searchrotatedduplicate {
+
+	public static void main(String[] args) {
+		int[] arr = {1,0,1,1,1};
+		int target = 0;
+		
+		boolean ans = searchrotated(arr,target);
+		System.out.println(ans);
+	
+	}
+	
+	public static boolean searchrotated(int[] array, int target) {
+		
+		int start = 0;
+		int end =array.length-1;
+		
+		while(start<=end) {
+			int mid = start + (end-start)/2;
+			
+			if(array[mid]== target) {
+				return true;
+			}
+			if(array[start]==array[mid] && array[mid]==array[end]) {
+				start++;
+				end--;
+				continue;
+			}
+			if(array[start]<array[mid]) {
+				if(target<=array[mid] && target >=array[start]) {
+					end=mid-1;
+				}
+				else { 
+					start=mid+1;
+				}
+			}
+			if(array[end]>array[mid]) {
+				if(target<=array[end] && target>=array[mid]) {
+					start=mid+1;
+				}
+				else {
+					end=mid-1;
+				}
+			}
+			
+		}
+		return false;
+	}
+
+
+	
+
+}
