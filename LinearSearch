@@ -3,7 +3,7 @@ package JavaDSA;
 public class linearsearch {
 
 	public static void main(String[] args) {
-		
+		anki
 		int[] arr = {1,2,3,4,5,88};
 		int target = 88;
 		System.out.println(search(arr, target));
